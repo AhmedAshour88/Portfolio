@@ -1,103 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed Elsayed Ashour — Full Stack Developer and Business Analyst with 15+ years of experience building enterprise applications, optimizing SQL Server, and delivering business intelligence solutions." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Ahmed Elsayed Ashour | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <header>
-    <div>
-        <h1 class="center-class">Welcome!</h1>
-        <br/>
-        <h2 class="center-class">Ahmed Elsayed Ashour</h2>
-    </div>
-    <nav class="center-class">
-        <ol>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>           
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact me</a></li>
-        </ol>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Ahmed Ashour home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">AHMED ASHOUR</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#work">Highlights</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch color theme">☼</button>
+      </div>
     </nav>
-    </header>
+  </header>
 
-    <div class="content-class">
-    <section id="about">
-        <h1>About</h1>
-        <p>Full Stack Developer, with experience in multiple programming languages and technologies, with a strong
-           ability to learn and adapt, passionate about building scalable and high-performance applications.</p>
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT OPPORTUNITIES</div>
+          <p class="hero-kicker">FULL STACK DEVELOPER <span>·</span> BUSINESS ANALYST</p>
+          <h1>Building reliable<br><span class="gradient-text">digital systems</span><br>that move work forward.</h1>
+          <p class="hero-intro">I'm <strong>Ahmed Elsayed Ashour</strong> — a developer and business analyst with 15+ years of experience turning complex requirements and data into dependable enterprise solutions.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+          <div class="hero-meta"><span><i></i> Alexandria, Egypt</span><span>15+ years in technology</span></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="code-window">
+            <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>solution.cs</span><span class="window-status">● LIVE</span></div>
+            <div class="code-content">
+              <div><span class="line-no">01</span><span class="code-purple">public class</span> <span class="code-yellow">Solution</span></div>
+              <div><span class="line-no">02</span>{</div>
+              <div><span class="line-no">03</span>&nbsp;&nbsp;<span class="code-purple">public string</span> Focus =&gt;</div>
+              <div><span class="line-no">04</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Business impact"</span>;</div>
+              <div><span class="line-no">05</span></div>
+              <div><span class="line-no">06</span>&nbsp;&nbsp;<span class="code-purple">public string</span> Approach =&gt;</div>
+              <div><span class="line-no">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Engineering + insight"</span>;</div>
+              <div><span class="line-no">08</span></div>
+              <div><span class="line-no">09</span>&nbsp;&nbsp;<span class="code-purple">public bool</span> Quality =&gt; <span class="code-orange">true</span>;</div>
+              <div><span class="line-no">10</span>}</div>
+              <div class="code-cursor"></div>
+            </div>
+            <div class="window-footer"><span>● .NET / SQL SERVER</span><span>BUILDING WITH PURPOSE</span></div>
+          </div>
+          <div class="floating-card card-years"><strong>15<span>+</span></strong><small>YEARS EXPERIENCE</small></div>
+          <div class="floating-card card-stack"><span class="stack-icon">▤</span><div><strong>Data to decisions</strong><small>Applications · BI · Automation</small></div></div>
+          <div class="visual-caption">ENGINEERING WITH PURPOSE <span>✳</span></div>
+        </div>
+      </div>
+      <div class="container tech-strip"><span>CORE TECHNOLOGIES</span><div> C# <b>·</b> ASP.NET <b>·</b> SQL SERVER <b>·</b> JAVASCRIPT <b>·</b> SSRS <b>·</b> .NET</div></div>
     </section>
 
-    <section id="experience">
-        <h1>Experience</h1>
-        <div class="job-role-class">
-        <h3>Full Stack Developer</h3>
-        <h3>Jun 2019 - Present</h3>
+    <section class="section section-about" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>Technology should<br>solve <span class="gradient-text">real problems.</span></h2></div>
+        <div class="about-content reveal"><p class="lead">I work at the intersection of software engineering, data, and business processes.</p><p>Over the course of my career at Alexandria University’s Information Technology and Decision Support Center, I've helped design and support enterprise-level systems, improve application performance, automate workflows, and build reporting solutions that help teams make better decisions.</p><p>My approach combines analytical thinking with hands-on development: understand the need, shape the solution, and keep improving it.</p>
+          <div class="about-facts"><div><strong>10+</strong><span>Departments supported through process improvement</span></div><div><strong>85–90%</strong><span>Reported efficiency and performance improvements</span></div></div>
         </div>
-        <div class="">
-        <h4>Information Technology and Decision Support Center - Alexandria University</h4>
-        </div>
-
-        <div class="job-role-class">
-        <h3>Report Developer (MSSQL Server BI)</h3>
-        <h3>Sep 2010 - Present</h3>
-        </div>
-        <div class="">
-        <h4>Information Technology and Decision Support Center - Alexandria University</h4>
-        </div>
-
-        <div class="job-role-class">
-        <h3>MIS Application Support</h3>
-        <h3>Feb 2010 - Mar 2020</h3>
-        </div>
-        <div class="">
-       <h4>Information Technology and Decision Support Center - Alexandria University</h4>
-       </div>
+      </div>
     </section>
 
-    <section id="education">
-        <h1>Education</h1>
-        <div class="job-role-class">
-        <h3>Bachelor of Science (BS) in Computer Science</h3>
-        <h3>2005 - 2009</h3>
+    <section class="section section-expertise" id="expertise">
+      <div class="container">
+        <div class="section-top reveal"><div><p class="eyebrow">02 / WHAT I DO</p><h2>Areas of <span class="gradient-text">expertise.</span></h2></div><p class="section-note">A practical blend of engineering, data, and business analysis to deliver systems that scale and serve their users.</p></div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal"><span class="card-index">01</span><div class="expertise-icon">⌘</div><h3>Full Stack Development</h3><p>Designing and developing enterprise web applications with maintainable architecture and user-focused workflows.</p><div class="tags"><span>C#</span><span>ASP.NET</span><span>.NET / MVC</span><span>JavaScript</span><span>HTML / CSS</span></div></article>
+          <article class="expertise-card reveal"><span class="card-index">02</span><div class="expertise-icon">▥</div><h3>Database Engineering</h3><p>Building reliable data layers and improving query performance, indexing strategies, and stored procedures.</p><div class="tags"><span>SQL Server</span><span>T-SQL</span><span>Oracle</span><span>Data Modeling</span></div></article>
+          <article class="expertise-card reveal"><span class="card-index">03</span><div class="expertise-icon">◫</div><h3>Business Intelligence</h3><p>Turning operational data into clear reports, dashboards, and actionable performance indicators.</p><div class="tags"><span>SSRS</span><span>Dashboards</span><span>KPIs</span><span>SQL Agent</span></div></article>
+          <article class="expertise-card reveal"><span class="card-index">04</span><div class="expertise-icon">⌁</div><h3>Business Analysis</h3><p>Clarifying requirements, mapping processes, identifying gaps, and translating business needs into technical solutions.</p><div class="tags"><span>Requirements</span><span>Process Mapping</span><span>Automation</span><span>SDLC</span></div></article>
         </div>
-        <div>
-        <p>Faculty of Science - Alexandria University</p>
-        </div>
+      </div>
     </section>
 
-    <section id="skills">
-        <h1>Skills</h1>
-        <div>
-        <h3>Programming Languages:</h3>
-        <h4>C, C++, C#, Java, Java 2E, HTML, CSS, JavaScript, TypeScript, ASP, Python, SQL</h4>
-        <h3>Developing Frame Works:</h3>
-        <h4>Oracle, .Net, Microsoft SQL Server, SQL Server Reporting Services (SSRS)</h4>
-        <h3>Principles:</h3>
-        <h4>OOP, SOLID, SDLC SoftWare Development Lifecycle</h4>
-        <h3>Soft Skills:</h3>
-        <h4>Strong written and verbal communication, Problem-solving and analytical thinking, Team
-            collaboration and adaptability, Time management and multitasking</h4>
+    <section class="section section-experience" id="experience">
+      <div class="container">
+        <div class="section-top reveal"><div><p class="eyebrow">03 / CAREER JOURNEY</p><h2>Experience that <span class="gradient-text">adds up.</span></h2></div><p class="section-note">Long-term work across application development, business intelligence, and enterprise application support.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">JUN 2019 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-body"><div class="timeline-title"><div><h3>Full Stack Developer &amp; Business Analyst</h3><p class="company">Information Technology and Decision Support Center · Alexandria University</p></div><span class="current-pill">CURRENT</span></div><ul><li>Analyze business requirements and develop scalable web applications using ASP.NET, C#, and SQL Server.</li><li>Automate workflows and reports, with reported reductions of up to 85% in manual operations.</li><li>Conduct process mapping and gap analysis to improve usability and operational efficiency.</li><li>Optimize stored procedures and indexes, achieving reported performance improvements of up to 90%.</li><li>Collaborate with stakeholders on KPIs, dashboards, and functional and technical specifications.</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">SEP 2010 — PRESENT</div><div class="timeline-marker"></div><div class="timeline-body"><h3>SSRS Report Developer · MS SQL Server BI</h3><p class="company">Information Technology and Decision Support Center · Alexandria University</p><ul><li>Design, deploy, and maintain SSRS reports and BI dashboards for executive decision-making.</li><li>Improve SQL queries and indexing, reducing report generation time by up to 85%.</li><li>Automate data refresh and scheduling through SQL Agent and SSRS subscriptions.</li><li>Support data accuracy and consistency through validation and normalization.</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">FEB 2010 — MAR 2020</div><div class="timeline-marker"></div><div class="timeline-body"><h3>MIS Application Support Specialist</h3><p class="company">Information Technology and Decision Support Center · Alexandria University</p><ul><li>Provided business analysis and technical support for university MIS applications.</li><li>Gathered user requirements and coordinated enhancements with development teams.</li><li>Resolved application issues and supported system uptime and user satisfaction.</li><li>Trained end-users and supported adoption of digital systems across departments.</li></ul></div></article>
         </div>
+        <p class="timeline-footnote">Roles and dates are presented as listed in the CV; the positions at the Center overlap.</p>
+      </div>
     </section>
 
-    <section id="contact">
-        <h1>Contact me</h1>
-        <div>
-        <h3>LinkedIn</h3> 
-        <h4>https://www.linkedin.com/in/ahmed3ashour</h4>
-        <h3>Email</h3> 
-        <h4>ahmed.elsayed.ashour@gmail.com</h4>
+    <section class="section section-highlights" id="work">
+      <div class="container">
+        <div class="section-top reveal"><div><p class="eyebrow">04 / SELECTED IMPACT</p><h2>Work measured by <span class="gradient-text">outcomes.</span></h2></div><p class="section-note">A selection of achievements and impact areas from my professional experience.</p></div>
+        <div class="impact-grid">
+          <article class="impact-card impact-feature reveal"><span class="impact-label">PROCESS AUTOMATION</span><strong>85<span>%</span></strong><h3>Less manual work</h3><p>Automated workflows and reporting processes to reduce repetitive operations and improve consistency.</p><span class="impact-decoration">↗</span></article>
+          <article class="impact-card reveal"><span class="impact-label">DATABASE PERFORMANCE</span><strong>90<span>%</span></strong><h3>Performance improvement</h3><p>Optimized stored procedures and indexes to improve system responsiveness.</p></article>
+          <article class="impact-card reveal"><span class="impact-label">REPORTING &amp; BI</span><strong>85<span>%</span></strong><h3>Faster report generation</h3><p>Streamlined SQL queries and indexing for more efficient report delivery.</p></article>
+          <article class="impact-card reveal"><span class="impact-label">ORGANIZATIONAL REACH</span><strong>10<span>+</span></strong><h3>Departments supported</h3><p>Contributed to business analysis and process automation initiatives across departments.</p></article>
         </div>
+        <div class="achievement-band reveal"><div class="achievement-symbol">✦</div><div><span class="eyebrow">RECOGNITION</span><h3>Top 32 Arab Certified Participants</h3><p>Android Developer Nanodegree · One Million Arab Coders Initiative</p></div><span class="achievement-year">2019</span></div>
+      </div>
     </section>
 
-    </div>   
+    <section class="section section-toolkit">
+      <div class="container toolkit-layout">
+        <div class="section-heading reveal"><p class="eyebrow">05 / MY TOOLKIT</p><h2>The tools behind<br><span class="gradient-text">the solutions.</span></h2><p class="section-note">Technologies and practices used throughout my career.</p></div>
+        <div class="toolkit-content reveal">
+          <div class="toolkit-group"><h3>Programming</h3><div class="tool-list"><span>C#</span><span>ASP.NET</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Python</span><span>HTML</span><span>CSS</span></div></div>
+          <div class="toolkit-group"><h3>Frameworks &amp; Tools</h3><div class="tool-list"><span>.NET</span><span>MVC</span><span>Bootstrap</span><span>Git</span><span>Visual Studio</span><span>WebStorm</span></div></div>
+          <div class="toolkit-group"><h3>Data &amp; Reporting</h3><div class="tool-list"><span>SQL Server</span><span>Oracle</span><span>T-SQL</span><span>Stored Procedures</span><span>SSRS</span><span>Query Optimization</span><span>Indexing</span></div></div>
+          <div class="toolkit-group"><h3>Engineering Practices</h3><div class="tool-list"><span>OOP</span><span>SOLID</span><span>SDLC</span><span>Agile</span><span>System Design</span><span>Testing</span><span>Code Review</span><span>Version Control</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-education">
+      <div class="container education-grid">
+        <div class="reveal"><p class="eyebrow">06 / EDUCATION</p><h2>Learning is part<br>of the <span class="gradient-text">process.</span></h2><div class="education-card"><span class="education-icon">⌂</span><div><h3>B.Sc. in Computer Science</h3><p>Faculty of Science · Alexandria University</p><span class="education-meta">2005 — 2009 &nbsp; / &nbsp; Overall grade: Good</span></div></div></div>
+        <div class="reveal"><p class="eyebrow">CERTIFICATIONS</p><div class="cert-list">
+          <div><span>2023</span><strong>Digital Transformation</strong></div><div><span>2019</span><strong>Android Developer</strong></div><div><span>2018</span><strong>Python Developer</strong></div><div><span>2012</span><strong>Oracle Developer</strong></div><div><span>2011</span><strong>SQL Developer</strong></div><div><span>2008</span><strong>C# Developer</strong></div>
+        </div><div class="language-row"><span>LANGUAGES</span><p>English <b>Advanced</b> &nbsp;·&nbsp; French <b>Basic</b> &nbsp;·&nbsp; German <b>Basic</b></p></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="container contact-inner reveal"><p class="eyebrow">07 / START A CONVERSATION</p><h2>Have a challenge<br>worth <span class="gradient-text">solving?</span></h2><p class="contact-copy">I'm always interested in meaningful projects, thoughtful teams, and opportunities to build better digital systems.</p><a class="button button-primary contact-button" href="mailto:ahmed.elsayed.ashour@gmail.com">Email me <span>↗</span></a>
+        <div class="contact-details"><a href="mailto:ahmed.elsayed.ashour@gmail.com">ahmed.elsayed.ashour@gmail.com</a><a href="tel:+201067339285">+20 106 733 9285</a><a href="https://www.linkedin.com/in/ahmed3ashour" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>Alexandria, Egypt</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">A<span>.</span></span><span class="brand-name">AHMED ASHOUR</span></a><p>Designed with purpose. Built with care.</p><span>© <span id="year"></span> Ahmed Elsayed Ashour</span></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
-
 </html>
-
-
